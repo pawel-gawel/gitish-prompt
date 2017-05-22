@@ -1,2 +1,2 @@
-source "${GITAWAREPROMPT}/colors.sh"
-source "${GITAWAREPROMPT}/prompt.sh"
+source "${BASH_SOURCE%/*}/colors.sh"
+source "${BASH_SOURCE%/*}/prompt.sh"
