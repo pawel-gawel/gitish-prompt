@@ -1,3 +1,7 @@
+source "${BASH_SOURCE%/*}/colors.sh"
+
+# ---
+
 set_prompt_vars() {
   reinit_prompt_vars
   set_git_vars
@@ -56,8 +60,3 @@ PROMPT_COMMAND="set_prompt_vars; $PROMPT_COMMAND"
 
 export PS1="\[$txtwht\]\$tuple_dir\[$txtlgrn\]\$git_branch_formatted\[$txtred\]\$git_dirty\[$txtlylw\]\$git_tag_formatted\[$txtrst\]\[$txtgrn\]\$git_branches_formatted\[$txtrst\]\$carette"
 export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "
-
-# !!!!!!!!! 
-
-alias cdg="cd ~/work/git-hands-on"
-
